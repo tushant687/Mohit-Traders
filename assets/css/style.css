@@ -1,0 +1,125 @@
+/* Page background */
+body {
+  background-color: hsl(210, 50%, 99%);  /* White background */
+  color: hsl(240, 93%, 11%);             /* Dark text for readability */
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: hwb(253 1% 67%) !important; /* Dark Blue */
+}
+
+.navbar .nav-link {
+  color: lab(74.38% 36.5 -26.41) !important; /* Light gray text */
+}
+
+.navbar .nav-link:hover {
+  color: #ffcc00 !important; /* Yellow on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #00264d !important; /* Even darker blue */
+  color: hwb(230 0% 72%);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #ff6600;  /* Orange */
+  border-color: #ff6600;
+}
+
+.btn-primary:hover {
+  background-color: #e65c00;
+  border-color: #e65c00;
+}
+
+/* Gallery placeholders */
+.ratio {
+  background-color: hsl(0, 25%, 80%); /* Light gray box */
+  background-image: none;    /* Removes grid pattern */
+}
+
+/* --- Product Layout Switcher (non-invasive) --- */
+#products.grid .card { width: 100%; }
+
+#products.list .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#products.list .card img {
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
+}
+#products.list .card-body { text-align: left; }
+
+#products.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+#products.gallery > .col, 
+#products.gallery > [class*="col-"] {
+  flex: 1 1 calc(25% - 15px);
+  max-width: calc(25% - 15px);
+}
+#products.gallery .card img {
+  height: 200px;
+  object-fit: cover;
+}
+/* --- About Products Section (Green-Teal Theme) --- */
+.about-products {
+  background: #eef6f2; /* light mint background */
+  padding: 50px 20px;
+  border-radius: 15px;
+}
+
+.about-products .section-title {
+  font-size: 2rem;
+  color: #14532d; /* dark green */
+  position: relative;
+  display: inline-block;
+}
+
+.about-products .section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #10b981; /* emerald green accent */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.about-products .intro-text {
+  max-width: 800px;
+  margin: 15px auto 30px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #374151; /* slate gray for readability */
+}
+
+.about-products .feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff; /* white cards for contrast */
+  border: 1px solid #d1fae5; /* subtle mint border */
+}
+
+.about-products .feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(16,185,129,0.25); /* green glow */
+}
+
+.about-products h5 {
+  color: #0f766e; /* teal heading */
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.about-products p {
+  font-size: 0.95rem;
+  color: #4b5563; /* neutral dark gray */
+}
