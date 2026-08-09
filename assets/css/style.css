@@ -133,7 +133,6 @@ footer {
     color: #4b5563; /* neutral dark gray */
 }
 
-
 /* =========================================
    RESPONSIVE DESIGN
    Mobile + Tablet + Laptop
@@ -146,36 +145,27 @@ body {
     overflow-x: hidden;
 }
 
-/* Images/videos should never overflow */
+/* Images and videos */
 img,
 video {
     max-width: 100%;
 }
 
-/* Better mobile text wrapping */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    overflow-wrap: break-word;
-}
-
 
 /* =========================================
-   HERO VIDEO SECTIONS
+   HERO VIDEO - DEFAULT / LAPTOP
    ========================================= */
 
 section.position-relative {
     max-width: 100%;
+    overflow: hidden;
 }
 
 section.position-relative video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
 }
 
 
@@ -185,7 +175,6 @@ section.position-relative video {
 
 @media (max-width: 991px) {
 
-    /* Navbar */
     .navbar-brand {
         font-size: 1.1rem;
     }
@@ -194,7 +183,6 @@ section.position-relative video {
         padding: 10px 15px;
     }
 
-    /* Hero */
     section.position-relative {
         height: 80vh !important;
         min-height: 500px;
@@ -208,7 +196,6 @@ section.position-relative video {
         font-size: 1rem;
     }
 
-    /* Product gallery */
     #products.gallery > .col,
     #products.gallery > [class*="col-"] {
         flex: 1 1 calc(50% - 15px);
@@ -223,12 +210,10 @@ section.position-relative video {
 
 @media (max-width: 767px) {
 
-    /* Body */
     body {
         font-size: 15px;
     }
 
-    /* Navbar */
     .navbar-brand {
         font-size: 1rem;
     }
@@ -237,21 +222,44 @@ section.position-relative video {
         padding: 8px 10px;
     }
 
-    /* Hero section */
+
+    /* HERO VIDEO */
+
     section.position-relative {
         height: 65vh !important;
-        min-height: 400px;
+        min-height: 380px;
+        max-height: 600px;
+        overflow: hidden !important;
     }
 
     section.position-relative video {
-        object-fit: cover;
+        width: 100% !important;
+        height: 100% !important;
+
+        /*
+         * Show the complete video on mobile.
+         * This prevents important parts of the video
+         * from being cropped.
+         */
+        object-fit: contain !important;
+        object-position: center center !important;
+
+        background-color: #000;
     }
 
-    /* Hero text box */
+
+    /* HERO TEXT */
+
     section.position-relative .translate-middle {
-        width: 90%;
-        max-width: 90%;
-        padding: 20px !important;
+        width: 88% !important;
+        max-width: 88% !important;
+
+        left: 50% !important;
+        top: 50% !important;
+
+        transform: translate(-50%, -50%) !important;
+
+        padding: 18px !important;
     }
 
     section.position-relative h1 {
@@ -270,9 +278,7 @@ section.position-relative video {
     }
 
 
-    /* =====================================
-       PRODUCT GALLERY
-       ===================================== */
+    /* PRODUCT GALLERY */
 
     #products.gallery {
         gap: 12px;
@@ -290,9 +296,7 @@ section.position-relative video {
     }
 
 
-    /* =====================================
-       PRODUCT LIST
-       ===================================== */
+    /* PRODUCT LIST */
 
     #products.list .card {
         flex-direction: column;
@@ -311,9 +315,7 @@ section.position-relative video {
     }
 
 
-    /* =====================================
-       ABOUT PRODUCTS
-       ===================================== */
+    /* ABOUT PRODUCTS */
 
     .about-products {
         padding: 35px 15px;
@@ -334,9 +336,7 @@ section.position-relative video {
     }
 
 
-    /* =====================================
-       FOOTER
-       ===================================== */
+    /* FOOTER */
 
     footer {
         text-align: center;
@@ -348,9 +348,7 @@ section.position-relative video {
     }
 
 
-    /* =====================================
-       BUTTONS
-       ===================================== */
+    /* BUTTONS */
 
     .btn {
         max-width: 100%;
@@ -367,6 +365,12 @@ section.position-relative video {
     section.position-relative {
         height: 60vh !important;
         min-height: 350px;
+        max-height: 500px;
+    }
+
+    section.position-relative video {
+        object-fit: contain !important;
+        object-position: center center !important;
     }
 
     section.position-relative h1 {
