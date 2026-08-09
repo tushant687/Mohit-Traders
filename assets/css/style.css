@@ -1,125 +1,391 @@
 /* Page background */
 body {
-  background-color: hsl(210, 50%, 99%);  /* White background */
-  color: hsl(240, 93%, 11%);             /* Dark text for readability */
-  font-family: Arial, sans-serif;
+    background-color: hsl(210, 50%, 99%);  /* White background */
+    color: hsl(240, 93%, 11%);             /* Dark text for readability */
+    font-family: Arial, sans-serif;
 }
 
 /* Navbar */
 .navbar {
-  background-color: hwb(253 1% 67%) !important; /* Dark Blue */
+    background-color: hwb(253 1% 67%) !important; /* Dark Blue */
 }
 
 .navbar .nav-link {
-  color: lab(74.38% 36.5 -26.41) !important; /* Light gray text */
+    color: lab(74.38% 36.5 -26.41) !important; /* Light gray text */
 }
 
 .navbar .nav-link:hover {
-  color: #ffcc00 !important; /* Yellow on hover */
+    color: #ffcc00 !important; /* Yellow on hover */
 }
 
 /* Footer */
 footer {
-  background-color: #00264d !important; /* Even darker blue */
-  color: hwb(230 0% 72%);
+    background-color: #00264d !important; /* Even darker blue */
+    color: hwb(230 0% 72%);
 }
 
 /* Buttons */
 .btn-primary {
-  background-color: #ff6600;  /* Orange */
-  border-color: #ff6600;
+    background-color: #ff6600;  /* Orange */
+    border-color: #ff6600;
 }
 
 .btn-primary:hover {
-  background-color: #e65c00;
-  border-color: #e65c00;
+    background-color: #e65c00;
+    border-color: #e65c00;
 }
 
 /* Gallery placeholders */
 .ratio {
-  background-color: hsl(0, 25%, 80%); /* Light gray box */
-  background-image: none;    /* Removes grid pattern */
+    background-color: hsl(0, 25%, 80%); /* Light gray box */
+    background-image: none;    /* Removes grid pattern */
 }
 
 /* --- Product Layout Switcher (non-invasive) --- */
-#products.grid .card { width: 100%; }
+#products.grid .card {
+    width: 100%;
+}
 
 #products.list .card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
 #products.list .card img {
-  width: 120px;
-  height: auto;
-  margin-right: 20px;
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
 }
-#products.list .card-body { text-align: left; }
+
+#products.list .card-body {
+    text-align: left;
+}
 
 #products.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
-#products.gallery > .col, 
+
+#products.gallery > .col,
 #products.gallery > [class*="col-"] {
-  flex: 1 1 calc(25% - 15px);
-  max-width: calc(25% - 15px);
+    flex: 1 1 calc(25% - 15px);
+    max-width: calc(25% - 15px);
 }
+
 #products.gallery .card img {
-  height: 200px;
-  object-fit: cover;
+    height: 200px;
+    object-fit: cover;
 }
+
 /* --- About Products Section (Green-Teal Theme) --- */
 .about-products {
-  background: #eef6f2; /* light mint background */
-  padding: 50px 20px;
-  border-radius: 15px;
+    background: #eef6f2; /* light mint background */
+    padding: 50px 20px;
+    border-radius: 15px;
 }
 
 .about-products .section-title {
-  font-size: 2rem;
-  color: #14532d; /* dark green */
-  position: relative;
-  display: inline-block;
+    font-size: 2rem;
+    color: #14532d; /* dark green */
+    position: relative;
+    display: inline-block;
 }
 
 .about-products .section-title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: #10b981; /* emerald green accent */
-  margin: 10px auto 0;
-  border-radius: 2px;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #10b981; /* emerald green accent */
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
 
 .about-products .intro-text {
-  max-width: 800px;
-  margin: 15px auto 30px;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #374151; /* slate gray for readability */
+    max-width: 800px;
+    margin: 15px auto 30px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #374151; /* slate gray for readability */
 }
 
 .about-products .feature-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: #ffffff; /* white cards for contrast */
-  border: 1px solid #d1fae5; /* subtle mint border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff; /* white cards for contrast */
+    border: 1px solid #d1fae5; /* subtle mint border */
 }
 
 .about-products .feature-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(16,185,129,0.25); /* green glow */
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.25); /* green glow */
 }
 
 .about-products h5 {
-  color: #0f766e; /* teal heading */
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+    color: #0f766e; /* teal heading */
+    margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
 .about-products p {
-  font-size: 0.95rem;
-  color: #4b5563; /* neutral dark gray */
+    font-size: 0.95rem;
+    color: #4b5563; /* neutral dark gray */
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   Mobile + Tablet + Laptop
+   ========================================= */
+
+/* Prevent horizontal scrolling */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Images/videos should never overflow */
+img,
+video {
+    max-width: 100%;
+}
+
+/* Better mobile text wrapping */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================
+   HERO VIDEO SECTIONS
+   ========================================= */
+
+section.position-relative {
+    max-width: 100%;
+}
+
+section.position-relative video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 991px) {
+
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .navbar .nav-link {
+        padding: 10px 15px;
+    }
+
+    /* Hero */
+    section.position-relative {
+        height: 80vh !important;
+        min-height: 500px;
+    }
+
+    section.position-relative h1 {
+        font-size: 2.2rem;
+    }
+
+    section.position-relative p {
+        font-size: 1rem;
+    }
+
+    /* Product gallery */
+    #products.gallery > .col,
+    #products.gallery > [class*="col-"] {
+        flex: 1 1 calc(50% - 15px);
+        max-width: calc(50% - 15px);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 767px) {
+
+    /* Body */
+    body {
+        font-size: 15px;
+    }
+
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .navbar .nav-link {
+        padding: 8px 10px;
+    }
+
+    /* Hero section */
+    section.position-relative {
+        height: 65vh !important;
+        min-height: 400px;
+    }
+
+    section.position-relative video {
+        object-fit: cover;
+    }
+
+    /* Hero text box */
+    section.position-relative .translate-middle {
+        width: 90%;
+        max-width: 90%;
+        padding: 20px !important;
+    }
+
+    section.position-relative h1 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    section.position-relative p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    section.position-relative .btn {
+        font-size: 0.9rem;
+        padding: 10px 18px;
+    }
+
+
+    /* =====================================
+       PRODUCT GALLERY
+       ===================================== */
+
+    #products.gallery {
+        gap: 12px;
+    }
+
+    #products.gallery > .col,
+    #products.gallery > [class*="col-"] {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    #products.gallery .card img {
+        height: 220px;
+        object-fit: cover;
+    }
+
+
+    /* =====================================
+       PRODUCT LIST
+       ===================================== */
+
+    #products.list .card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #products.list .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        margin-right: 0;
+    }
+
+    #products.list .card-body {
+        text-align: center;
+    }
+
+
+    /* =====================================
+       ABOUT PRODUCTS
+       ===================================== */
+
+    .about-products {
+        padding: 35px 15px;
+        border-radius: 10px;
+    }
+
+    .about-products .section-title {
+        font-size: 1.6rem;
+    }
+
+    .about-products .intro-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .about-products h5 {
+        font-size: 1.1rem;
+    }
+
+
+    /* =====================================
+       FOOTER
+       ===================================== */
+
+    footer {
+        text-align: center;
+    }
+
+    footer .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    /* =====================================
+       BUTTONS
+       ===================================== */
+
+    .btn {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    section.position-relative {
+        height: 60vh !important;
+        min-height: 350px;
+    }
+
+    section.position-relative h1 {
+        font-size: 1.45rem;
+    }
+
+    section.position-relative p {
+        font-size: 0.85rem;
+    }
+
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+
+    .about-products .section-title {
+        font-size: 1.4rem;
+    }
+
+    #products.gallery .card img {
+        height: 180px;
+    }
 }
