@@ -34,141 +34,142 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
   <div class="container">
 
     <!-- Logo + Brand Name -->
     <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-      <img src="img/Logo.jpg" alt="Mohit Traders Logo" class="navbar-logo">
+      <img
+        src="img/Logo.jpg"
+        alt="Mohit Traders Logo"
+        class="navbar-logo">
       <span>MOHIT TRADERS</span>
     </a>
 
     <!-- Mobile Menu Button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
-      aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#nav"
+      aria-controls="nav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+
       <span class="navbar-toggler-icon"></span>
+
     </button>
 
-      <!-- Mobile Menu Button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#nav"
-        aria-controls="nav"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
+    <!-- Navigation Menu -->
+    <div class="collapse navbar-collapse" id="nav">
 
-        <span class="navbar-toggler-icon"></span>
+      <ul class="navbar-nav ms-auto">
 
-      </button>
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">
+            Home
+          </a>
+        </li>
 
-      <!-- Navigation Menu -->
-      <div class="collapse navbar-collapse" id="nav">
+        <!-- About Us -->
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">
+            About Us
+          </a>
+        </li>
 
-        <ul class="navbar-nav ms-auto">
+        <!-- All Products -->
+        <li class="nav-item dropdown">
 
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              Home
-            </a>
-          </li>
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
 
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">
-              About Us
-            </a>
-          </li>
+            All Products
 
-          <!-- All Products Dropdown -->
-          <li class="nav-item dropdown">
+          </a>
 
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false">
-              All Products
-            </a>
+          <ul
+            class="dropdown-menu"
+            aria-labelledby="navbarDropdown">
 
-            <ul
-              class="dropdown-menu"
-              aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="all products.html">
+                All Products
+              </a>
+            </li>
 
-              <li>
-                <a class="dropdown-item" href="all products.html">
-                  All Products
-                </a>
-              </li>
+            <li>
+              <a class="dropdown-item" href="Nuts.html">
+                Scaffolding Accessories
+              </a>
+            </li>
 
-              <li>
-                <a class="dropdown-item" href="Nuts.html">
-                  Scaffolding Accessories
-                </a>
-              </li>
+            <li>
+              <a class="dropdown-item" href="scaffolding.html">
+                MS Scaffolding
+              </a>
+            </li>
 
-              <li>
-                <a class="dropdown-item" href="scaffolding.html">
-                  MS Scaffolding
-                </a>
-              </li>
+            <li>
+              <a class="dropdown-item" href="shuttering.html">
+                MS Shuttering
+              </a>
+            </li>
 
-              <li>
-                <a class="dropdown-item" href="shuttering.html">
-                  MS Shuttering
-                </a>
-              </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="Industrial Safety Railings.html">
+                MS Road Safety Railing/Barriers
+              </a>
+            </li>
 
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="Industrial Safety Railings.html">
-                  MS Road Safety Railing/Barriers
-                </a>
-              </li>
+          </ul>
 
-            </ul>
+        </li>
 
-          </li>
+        <!-- Services -->
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">
+            Services
+          </a>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">
-              Services
-            </a>
-          </li>
+        <!-- Infrastructure -->
+        <li class="nav-item">
+          <a class="nav-link" href="infrastructure.html">
+            Infrastructure
+          </a>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="infrastructure.html">
-              Infrastructure
-            </a>
-          </li>
+        <!-- Projects -->
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">
+            Projects
+          </a>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">
-              Projects
-            </a>
-          </li>
+        <!-- Contact Us -->
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">
+            Contact Us
+          </a>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link active" href="contact.html">
-              Contact Us
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
+      </ul>
 
     </div>
 
-  </nav>
+  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
+</nav>
+  
 <!-- Hero Video Section -->
 <section class="position-relative" style="min-height: 100vh; overflow: hidden;">
   <video autoplay muted loop playsinline poster="assets/images/contact-banner.jpg" class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
