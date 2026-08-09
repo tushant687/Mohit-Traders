@@ -393,3 +393,73 @@ section.position-relative video {
         height: 180px;
     }
 }
+/* =========================================
+   MOBILE + TABLET HERO VIDEO BLACK SPACE FIX
+   ========================================= */
+
+section.position-relative {
+    overflow: hidden !important;
+    background: #000;
+}
+
+section.position-relative video {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+}
+
+/* TABLET */
+@media (max-width: 991px) {
+
+    section.position-relative {
+        height: 70vh !important;
+        min-height: 450px !important;
+        max-height: 650px !important;
+    }
+
+    section.position-relative video {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center center !important;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+
+    section.position-relative {
+        height: 65vh !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        overflow: hidden !important;
+    }
+
+    section.position-relative video {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center center !important;
+    }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+
+    section.position-relative {
+        height: 60vh !important;
+        min-height: 0 !important;
+    }
+
+    section.position-relative video {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center center !important;
+    }
+}
