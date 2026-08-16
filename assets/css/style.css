@@ -510,3 +510,60 @@ section.position-relative video {
         object-position: center center;
     }
 }
+
+/* =========================================
+   ACCESSIBILITY - CONTRAST FIX
+   PageSpeed Insights
+   ========================================= */
+
+/* Primary buttons - better contrast */
+.btn-primary {
+    background-color: #0056b3 !important;
+    border-color: #0056b3 !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #003f82 !important;
+    border-color: #003f82 !important;
+    color: #ffffff !important;
+}
+
+/* Footer - high contrast text */
+footer,
+footer.bg-dark {
+    background-color: #00264d !important;
+    color: #ffffff !important;
+}
+
+footer a,
+footer a.text-light {
+    color: #ffffff !important;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #ffcc00 !important;
+}
+
+/* WhatsApp / green links */
+footer a.text-success {
+    color: #75e69c !important;
+}
+
+/* Footer headings */
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
+    color: #ffffff !important;
+}
+
+/* Footer paragraphs */
+footer p {
+    color: #ffffff !important;
+}
